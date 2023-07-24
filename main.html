@@ -1,11 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon"
+        href="https://abrakadabra.fun/uploads/posts/2022-01/1641892713_1-abrakadabra-fun-p-pazl-klipart-1.png"
+        type="image/png">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- Навигационное меню -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white col-md-12">
+        <!-- Лого сайта (замените ссылку и изображение на свои) -->
+        <a class="navbar-brand col-md-3 " href="#">
+            <img class="w-75" src="public/Main_logo.svg" alt="Логотип">
+        </a>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mx-5 px-5 col-md-9">
+                <li class="nav-item">
+                    <a class="nav-link ms-5" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-5" href="#">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-5" href="#">Агенты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ms-5" href="#">Карта</a>
+                </li>
+            </ul>
+
+            <!-- Выбор языка (предполагается, что у вас есть разные версии сайта на разных языках) -->
+            <ul class="navbar-nav ml-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle a_language" href="#" id="languageDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        RU
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#">Kyrgyz</a>
+                        <a class="dropdown-item" href="#">English</a>
+                        <!-- Добавьте другие языки по аналогии -->
+                    </div>
+                </li>
+            </ul>
+            <!-- Добавление иконки лупы для поиска -->
+            <ul class="navbar-nav ml-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img style="width: 40px; height: 40px;" src="public/search_logo.svg" alt="Поиск">
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Добавление иконки шторки -->
+            <ul class="navbar-nav ml-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img style="width: 40px; height: 40px;" src="public/menu_logo.svg" alt="Меню">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container text-center my-5">
+        <h1>Адмиралъ - быстро и качественно</h1>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center my-5 py-5" >
+        <a href="#" class=" btn btn-success btn-lg rounded-pill w-50">Перейти в каталог</a>
+    </div>
+
+
+    <img style="margin-top: 100px;" class="d-none d-xl-block img-fluid position-absolute top-0 " src="public/Picture_main.svg"
+        alt="">
+
+        <img class="d-none d-xl-block position-absolute d-xl-block" src="public/Picture_main_2.svg" alt=""
+        style="top: 100px; right: 0px; z-index: -1000;">
+
+
+
+        <div style="padding-top: 200px;" class="container text-center my-5 text_a">
+            <a><strong>Мы гарантируем:</strong></a>
+        </div>
+       
+
+        <div class="container text-center">
+            <div class="row">
+                <!-- Текст и картинки сверху -->
+                <div class="col-md-4">
+                    <div class="image-text">
+                        <img src="public/Iconsax/Linear/Vector.svg" alt="Картинка 1">
+                        <p class="my-1">Более 100 покупателей на вашу квартиру;</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-text">
+                        <img src="public/Iconsax/Linear/cardedit.svg" alt="Картинка 2">
+                        <p>Все объекты ПСО с дизайнерским проектом, а также скидка на разработку индивидуального проекта от наших партнёров;</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-text">
+                        <img src="public/img_3.svg" alt="Картинка 3">
+                        <p>Скидка на перевозку мебели от наших партнёров; </p>
+                    </div>
+                </div>
+                <!-- Текст и картинки снизу -->
+                <div class="col-md-6">
+                    <div class="image-text">
+                        <img src="public/Iconsax/Linear/percentagesquare.svg" alt="Картинка 4">
+                        <p>Скидка на двери и другие материалы от наших партнёров;</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-text">
+                        <img src="public/Iconsax/Linear/percentagesquare.svg" alt="Картинка 5">
+                        <p>Скидка на премиальную мебель от наших партнеров:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center my-5 py-5">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/_oDQu3BEw4o" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+        <div style="font-size: 24px; " class="container text-center my-5 ">
+            <a><strong>Почему стоит купить у нас:</strong></a>
+        </div>
+       
+        <div class="container">
+            <!-- Первый текст с картинкой -->
+            <div class="text-with-image">
+                <img src="public/Frame 233.svg" alt="Картинка 1">
+                <p class="p_sell">Для вас полное юридическое сопровождение</p>
+            </div>
+            <!-- Второй текст с картинкой -->
+            <div class="text-with-image">
+                <img src="path_to_image_2.jpg" alt="Картинка 2">
+                <p>Текст 2</p>
+            </div>
+            <!-- Третий текст с картинкой -->
+            <div class="text-with-image">
+                <img src="path_to_image_3.jpg" alt="Картинка 3">
+                <p>Текст 3</p>
+            </div>
+            <!-- Четвертый текст с картинкой -->
+            <div class="text-with-image">
+                <img src="path_to_image_4.jpg" alt="Картинка 4">
+                <p>Текст 4</p>
+            </div>
+            <!-- Пятый текст с картинкой -->
+            <div class="text-with-image">
+                <img src="path_to_image_5.jpg" alt="Картинка 5">
+                <p>Текст 5</p>
+            </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,72 @@
+.nav-item.dropdown .dropdown-toggle::after,
+.nav-item.dropdown .dropdown-toggle::before {
+    display: none;
+}
+*{
+    color: #00408E!important;
+
+}
+/* Дополнительные стили для центрирования текстовых элементов */
+.navbar {
+    justify-content: space-between;
+}
+
+/* Дополнительные стили для выравнивания языкового блока справа */
+.ml-auto {
+    margin-left: auto !important;
+}
+.a_language{
+    border-radius: 30%;
+    color: white!important;
+    background-color: #00408E;
+}
+
+  /* Переопределение дефолтного цвета текста */
+  .navbar-light .navbar-nav .nav-link {
+    color: #00408E; /* Замените на нужный вам цвет */
+    font-size: 24px; /* Увеличение размера текста */
+
+  }
+
+  /* Переопределение цвета текста в выпадающем меню */
+  .navbar-light .navbar-nav .dropdown-menu .dropdown-item {
+    color: #00408E; /* Замените на нужный вам цвет */
+  }
+/* Применение стилей к тексту */
+h1 {
+    font-size: 36px; /* Увеличение размера текста */
+    color: #00408E; /* Цвет текста #00408E */
+    margin: 0; /* Удаление отступов */
+    padding: 20px; /* Добавление внутренних отступов для визуального разделения от других элементов */
+}
+/* Применение стилей к кнопке "Перейти в каталог" */
+.btn-success {
+    background-color: #90C83F;
+    border-color: #90C83F;
+    color: white!important;
+    justify-content: center;
+    width: 200px; /* Ширина кнопки */
+    border-radius: 50px; /* Делает кнопку круглой (значение больше половины ширины, чтобы была округлая) */
+}
+.text_a{
+    font-size: 24px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 80%; /* Ширина блока видео */
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 400px; /* Высота видео */
+    border: none;
+    border-radius: 20px;
+}
+
