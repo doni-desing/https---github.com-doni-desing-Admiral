@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="shortcut icon"
-    href="https://abrakadabra.fun/uploads/posts/2022-01/1641892713_1-abrakadabra-fun-p-pazl-klipart-1.png"
-    type="image/png">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon"
+        href="https://abrakadabra.fun/uploads/posts/2022-01/1641892713_1-abrakadabra-fun-p-pazl-klipart-1.png"
+        type="image/png">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="/static/html/css/catalog.css">
 </head>
+
 <body>
-     <!-- Навигационное меню -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-white col-md-12">
+    <!-- Навигационное меню -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white col-md-12">
         <!-- Лого сайта (замените ссылку и изображение на свои) -->
         <a class="navbar-brand col-md-3" href="#">
-            <img class="w-75" src="public/Main_logo.svg" alt="Логотип">
+            <img class="w-75" src="/public/Main_logo.svg" alt="Логотип">
         </a>
         <!-- Добавление кнопки для шторки -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- Переместите все элементы nav внутрь этого div-контейнера для правильной адаптации -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav mx-5 px-5 col-md-9">
@@ -41,7 +42,7 @@
                     <a class="nav-link ms-5" href="#">Карта</a>
                 </li>
             </ul>
-    
+
             <!-- Выбор языка (предполагается, что у вас есть разные версии сайта на разных языках) -->
             <ul class="navbar-nav ml-3">
                 <li class="nav-item dropdown">
@@ -60,87 +61,366 @@
             <ul class="navbar-nav ml-3">
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <img style="width: 40px; height: 40px;" src="public/search_logo.svg" alt="Поиск">
+                        <img style="width: 40px; height: 40px;" src="/public/search_logo.svg" alt="Поиск">
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container mb-5">
+
+    <div class="container mb-5 my-5">
         <form class="d-flex justify-content-center align-items-center my-2">
-            <input class="d-flex form-control me-2 rounded-pill main__color searchable w-50 justify-content-center" style=" z-index: 1;" type="search"
-                placeholder="Поиск" aria-label="Search">
-            <img src="public/img_lumpa.svg" alt="Лумпа" class="d-flex " style="width: 40px; height: 40px;">
+            <input class="d-flex form-control me-2 rounded-pill main__color searchable w-75 justify-content-center"
+                style=" z-index: 1;" type="search" placeholder="Поиск" aria-label="Search">
+            <img src="/public/img_lumpa.svg" alt="Лумпа" class="d-flex " style="width: 40px; height: 40px;">
         </form>
     </div>
 
 
 
-    
+
     <div class="container ">
         <h1><strong>Категории недвижимости</strong></h1>
     </div>
 
-<img class=" container d-flex justify-content-center w-100" src="public/line_breaker.svg" alt="">
+    <img class=" container d-flex justify-content-center w-100" src="/public/line_breaker.svg" alt="">
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <img class="w-50 blueish-image" src="public/img_kvartira-1.svg" alt="">
+    <div class="container my-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-">               
+            <div class="col">
+                <div class="position-relative">
+                    <img class="w-100 blueish-image" src="/public/img_kvartira-1.svg" alt="">
+                    <div style="color: white!important;" class="image-text my-3">
+                        <span class="house-number">3</span> обьекта<br>
+                        <h1 class="house-type mx-4 my-2">Студия</h1>
+                        <div class="d-flex  my-5 py-5 justify-content-end">
+                            <div class="d-flex  my-5 py-5  justify-content-end">
+                                <span style="color: white!important;"
+                                    class="d-flex px-3 mx-4 py-4 my-5 read-more">Подробнее ></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="position-relative">
+                    <img class="w-100 blueish-image" src="/public/img_kvartira-1.svg" alt="">
+                    <div style="color: white!important;" class="image-text my-3">
+                        <span class="house-number">10</span> объектов<br>
+                        <h1 class="house-type mx-4 my-2">Офисы</h1>
+                        <div class="d-flex  my-5 py-5 justify-content-end">
+                            <div class="d-flex  my-5 py-5  justify-content-end">
+                                <span style="color: white!important;" class="d-flex px-3  py-4 my-5 read-more">Подробнее
+                                    ></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="position-relative">
+                    <img class="w-100 blueish-image" src="/public/img_kvartira-1.svg" alt="">
+                    <div style="color: white!important;" class="image-text my-3">
+                        <span class="house-number">3</span> обьекта<br>
+                        <h1 class="house-type mx-4 my-2">Студия</h1>
+                        <div class="d-flex  my-5 py-5 justify-content-end">
+                            <div class="d-flex  my-5 py-5  justify-content-end">
+                                <span style="color: white!important;"
+                                    class="d-flex px-3 mx-4 py-4 my-5 read-more">Подробнее ></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="position-relative">
+                    <img class="w-100 blueish-image" src="/public/img_kvartira-1.svg" alt="">
+                    <div style="color: white!important;" class="image-text my-3">
+                        <span class="house-number">10</span> объектов<br>
+                        <h1 class="house-type mx-4 my-2">Офисы</h1>
+                        <div class="d-flex  my-5 py-5 justify-content-end">
+                            <div class="d-flex  my-5 py-5  justify-content-end">
+                                <span style="color: white!important;" class="d-flex px-3  py-4 my-5 read-more">Подробнее
+                                    ></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
 
-    <footer>
-        <hr class="devider">
-        <div class="container py-5">
+    <img class=" container d-flex justify-content-center w-100" src="/public/line_breaker.svg" alt="">
+
+
+
+    <div class="container ">
+        <h1><strong>Рекомендации</strong></h1>
+    </div>
+
+    <div class="py-5">
+        <div class="container">
             <div class="row">
-                <!-- Group 1: Logos and Social Media -->
-                <div class="col-md-4">
-                    <img src="public/Main_logo.svg" alt="Logo" class="mb-3">
-                    <div class="d-flex ">
-                        <img src="public/instagramm.svg" alt="Facebook" class="social-icon px-2">
-                        <img src="public/whatsapp.svg" alt="Instagram" class="social-icon px-2">
-                        <img src="public/viber.svg" alt="Twitter" class="social-icon px-2">
+                <div class="col-md-3 mb-4">
+                    <div class="card custom-card">
+                        <div class="d-flex justify-content-center my-3">
+                            <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
+                            <div class="recommended-text">Рекомендуемые</div>
+                        </div>
+                        <div class="card-block mx-3">
+                            <div class="d-flex">
+                                <h4 style="color: #00408E;" class="card-title">Квартира</h4>
+                                <img style="margin-left: 80px; margin-top: 25px;" src="/public/Vector.svg" alt="">
+                            </div>
+                            <p style="font-size: 18px;">60000$</p>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 70px;">2 комнаты</p>
+                                <p style="font-size: 18px; margin-right: 10px;">15 m</p>
+                            </div>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 85px;">6/9 этаж</p>
+                                <p style="font-size: 18px; ">105 серия</p>
+                            </div>
+                            <p style="font-size: 18px; margin-bottom: 5px;">мкр. Учкун д21</p>
+                        </div>
                     </div>
-                    <div class="mt-5">
-                        <p class="">Гарантии</p>
-                        <p>Почему мы:</p>
-                        <p>Отзывы</p>
-                        <p>Оставить заявку на оценку</p>
-                    </div>
-                </div>
-                <!-- Group 2: Address and Google Map -->
-                <div class="col-md-4">
-                    <h1>Адрес</h1>
-                    <p>г.Бишкек ул Юнусалиева 56</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.004991775333!2d74.62078227675418!3d42.85162777115154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb645cdc52a45%3A0x832a3d15ccda7c14!2zNTYg0L_RgNC-0YHQvy4g0K7QvdGD0YHQsNC70LjQtdCy0LAsINCR0LjRiNC60LXQug!5e0!3m2!1sru!2skg!4v1690209286563!5m2!1sru!2skg"
-                        width="350" height="200" frameborder="0" allowfullscreen></iframe>
                 </div>
 
-                <!-- Group 3: Contacts and Working Hours -->
-                <div class="col-md-4">
-                    <h1>Контакты</h1>
-                    <p>Телефон: +7 123 456 789</p>
-                    <div class="py-5 my-3">
+
+                <div class="col-md-3 mb-4">
+                    <div class="card custom-card">
+                        <div class="d-flex justify-content-center my-3">
+                            <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
+                            <div class="recommended-text">Рекомендуемые</div>
+                        </div>
+                        <div class="card-block mx-3">
+                            <div class="d-flex">
+                                <h4 style="color: #00408E;" class="card-title">Квартира</h4>
+                                <img style="margin-left: 80px; margin-top: 25px;" src="/public/Vector.svg" alt="">
+                            </div>
+                            <p style="font-size: 18px;">60000$</p>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 70px;">2 комнаты</p>
+                                <p style="font-size: 18px; margin-right: 10px;">15 m</p>
+                            </div>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 85px;">6/9 этаж</p>
+                                <p style="font-size: 18px; ">105 серия</p>
+                            </div>
+                            <p style="font-size: 18px; margin-bottom: 5px;">мкр. Учкун д21</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card custom-card">
+                        <div class="d-flex justify-content-center my-3">
+                            <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
+                            <div class="recommended-text">Рекомендуемые</div>
+                        </div>
+                        <div class="card-block mx-3">
+                            <div class="d-flex">
+                                <h4 style="color: #00408E;" class="card-title">Квартира</h4>
+                                <img style="margin-left: 80px; margin-top: 25px;" src="/public/Vector.svg" alt="">
+                            </div>
+                            <p style="font-size: 18px;">60000$</p>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 70px;">2 комнаты</p>
+                                <p style="font-size: 18px; margin-right: 10px;">15 m</p>
+                            </div>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 85px;">6/9 этаж</p>
+                                <p style="font-size: 18px; ">105 серия</p>
+                            </div>
+                            <p style="font-size: 18px; margin-bottom: 5px;">мкр. Учкун д21</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card custom-card">
+                        <div class="d-flex justify-content-center my-3">
+                            <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
+                            <div class="recommended-text">Рекомендуемые</div>
+                        </div>
+                        <div class="card-block mx-3">
+                            <div class="d-flex">
+                                <h4 style="color: #00408E;" class="card-title">Квартира</h4>
+                                <img style="margin-left: 80px; margin-top: 25px;" src="/public/Vector.svg" alt="">
+                            </div>
+                            <p style="font-size: 18px;">60000$</p>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 70px;">2 комнаты</p>
+                                <p style="font-size: 18px; margin-right: 10px;">15 m</p>
+                            </div>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 85px;">6/9 этаж</p>
+                                <p style="font-size: 18px; ">105 серия</p>
+                            </div>
+                            <p style="font-size: 18px; margin-bottom: 5px;">мкр. Учкун д21</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card custom-card">
+                        <div class="d-flex justify-content-center my-3">
+                            <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
+                            <div class="recommended-text">Рекомендуемые</div>
+                        </div>
+                        <div class="card-block mx-3">
+                            <div class="d-flex">
+                                <h4 style="color: #00408E;" class="card-title">Квартира</h4>
+                                <img style="margin-left: 80px; margin-top: 25px;" src="/public/Vector.svg" alt="">
+                            </div>
+                            <p style="font-size: 18px;">60000$</p>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 70px;">2 комнаты</p>
+                                <p style="font-size: 18px; margin-right: 10px;">15 m</p>
+                            </div>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 85px;">6/9 этаж</p>
+                                <p style="font-size: 18px; ">105 серия</p>
+                            </div>
+                            <p style="font-size: 18px; margin-bottom: 5px;">мкр. Учкун д21</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card custom-card">
+                        <div class="d-flex justify-content-center my-3">
+                            <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
+                            <div class="recommended-text">Рекомендуемые</div>
+                        </div>
+                        <div class="card-block mx-3">
+                            <div class="d-flex">
+                                <h4 style="color: #00408E;" class="card-title">Квартира</h4>
+                                <img style="margin-left: 80px; margin-top: 25px;" src="/public/Vector.svg" alt="">
+                            </div>
+                            <p style="font-size: 18px;">60000$</p>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 70px;">2 комнаты</p>
+                                <p style="font-size: 18px; margin-right: 10px;">15 m</p>
+                            </div>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 85px;">6/9 этаж</p>
+                                <p style="font-size: 18px; ">105 серия</p>
+                            </div>
+                            <p style="font-size: 18px; margin-bottom: 5px;">мкр. Учкун д21</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card custom-card">
+                        <div class="d-flex justify-content-center my-3">
+                            <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
+                            <div class="recommended-text">Рекомендуемые</div>
+                        </div>
+                        <div class="card-block mx-3">
+                            <div class="d-flex">
+                                <h4 style="color: #00408E;" class="card-title">Квартира</h4>
+                                <img style="margin-left: 80px; margin-top: 25px;" src="/public/Vector.svg" alt="">
+                            </div>
+                            <p style="font-size: 18px;">60000$</p>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 70px;">2 комнаты</p>
+                                <p style="font-size: 18px; margin-right: 10px;">15 m</p>
+                            </div>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 85px;">6/9 этаж</p>
+                                <p style="font-size: 18px; ">105 серия</p>
+                            </div>
+                            <p style="font-size: 18px; margin-bottom: 5px;">мкр. Учкун д21</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card custom-card">
+                        <div class="d-flex justify-content-center my-3">
+                            <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
+                            <div class="recommended-text">Рекомендуемые</div>
+                        </div>
+                        <div class="card-block mx-3">
+                            <div class="d-flex">
+                                <h4 style="color: #00408E;" class="card-title">Квартира</h4>
+                                <img style="margin-left: 80px; margin-top: 25px;" src="/public/Vector.svg" alt="">
+                            </div>
+                            <p style="font-size: 18px;">60000$</p>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 70px;">2 комнаты</p>
+                                <p style="font-size: 18px; margin-right: 10px;">15 m</p>
+                            </div>
+                            <div class="d-flex">
+                                <p style="font-size: 18px; margin-right: 85px;">6/9 этаж</p>
+                                <p style="font-size: 18px; ">105 серия</p>
+                            </div>
+                            <p style="font-size: 18px; margin-bottom: 5px;">мкр. Учкун д21</p>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+</body>
+
+
+<footer>
+    <hr class="devider">
+    <div class="container py-5">
+        <div class="row">
+            <!-- Group 1: Logos and Social Media -->
+            <div class="col-md-4">
+                <img src="/public/Main_logo.svg" alt="Logo" class="mb-3">
+                <div class="d-flex ">
+                    <img src="/public/instagramm.svg" alt="Facebook" class="social-icon px-2">
+                    <img src="/public/whatsapp.svg" alt="Instagram" class="social-icon px-2">
+                    <img src="/public/viber.svg" alt="Twitter" class="social-icon px-2">
+                </div>
+                <div class="mt-5">
+                    <p class="">Гарантии</p>
+                    <p>Почему мы:</p>
+                    <p>Отзывы</p>
+                    <p>Оставить заявку на оценку</p>
+                </div>
+            </div>
+            <!-- Group 2: Address and Google Map -->
+            <div class="col-md-4">
+                <h1>Адрес</h1>
+                <p>г.Бишкек ул Юнусалиева 56</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.004991775333!2d74.62078227675418!3d42.85162777115154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb645cdc52a45%3A0x832a3d15ccda7c14!2zNTYg0L_RgNC-0YHQvy4g0K7QvdGD0YHQsNC70LjQtdCy0LAsINCR0LjRiNC60LXQug!5e0!3m2!1sru!2skg!4v1690209286563!5m2!1sru!2skg"
+                    width="350" height="200" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <!-- Group 3: Contacts and Working Hours -->
+            <div class="col-md-4">
+                <h1>Контакты</h1>
+                <p>Телефон: +7 123 456 789</p>
+                <div class="py-5 my-3">
                     <p>График работы:</p>
                     <p>Пн-Пт: с 8:00 до 17:00</p>
                     <p>Сб-Вс: с 8:00 до 17:00</p>
                 </div>
-                </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
 
 </body>
+
 </html>
