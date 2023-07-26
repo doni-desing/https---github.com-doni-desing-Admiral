@@ -1,0 +1,7 @@
+::placeholder {
+    color: #00408E!important;
+}
+
+.blueish-image {
+    filter: hue-rotate(200deg);
+}
