@@ -10,7 +10,7 @@
         href="https://abrakadabra.fun/uploads/posts/2022-01/1641892713_1-abrakadabra-fun-p-pazl-klipart-1.png"
         type="image/png">
     <title>Document</title>
-    <link rel="stylesheet" href="/static/html/css/catalog.css">
+    <link rel="stylesheet" href="/static/html/css/apartments.css">
 </head>
 
 <body>
@@ -85,66 +85,51 @@
 
     <img class=" container d-flex justify-content-center w-100" src="/public/line_breaker.svg" alt="">
 
-    <div class="container my-4">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 g-">               
-            <div class="col">
-                <div class="position-relative">
-                    <img class="w-100 blueish-image" src="/public/img_kvartira-1.svg" alt="">
-                    <div style="color: white!important;" class="image-text my-3">
-                        <span class="house-number">3</span> обьекта<br>
-                        <h1 class="house-type mx-4 my-2">Студия</h1>
-                        <div class="d-flex  my-5 py-5 justify-content-end">
-                            <div class="d-flex  my-5 py-5  justify-content-end">
-                                <span style="color: white!important;"
-                                    class="d-flex px-3 mx-4 py-4 my-5 read-more">Подробнее ></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col">
-                <div class="position-relative">
-                    <img class="w-100 blueish-image" src="/public/img_kvartira-1.svg" alt="">
-                    <div style="color: white!important;" class="image-text my-3">
-                        <span class="house-number">10</span> объектов<br>
-                        <h1 class="house-type mx-4 my-2">Офисы</h1>
-                        <div class="d-flex  my-5 py-5 justify-content-end">
-                            <div class="d-flex  my-5 py-5  justify-content-end">
-                                <span style="color: white!important;" class="d-flex px-3  py-4 my-5 read-more">Подробнее
-                                    ></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="position-relative">
-                    <img class="w-100 blueish-image" src="/public/img_kvartira-1.svg" alt="">
-                    <div style="color: white!important;" class="image-text my-3">
-                        <span class="house-number">3</span> обьекта<br>
-                        <h1 class="house-type mx-4 my-2">Студия</h1>
-                        <div class="d-flex  my-5 py-5 justify-content-end">
-                            <div class="d-flex  my-5 py-5  justify-content-end">
-                                <span style="color: white!important;"
-                                    class="d-flex px-3 mx-4 py-4 my-5 read-more">Подробнее ></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <img class="position-absolute d-none d-xl-block w-100" src="/public/Rectangle 16.svg" alt=""
+        style=" top: 340px; left: 0px; z-index: -1000;">
 
+    <div class="container w-75 searching my-5 ">
+        <div class="row">
             <div class="col">
-                <div class="position-relative">
-                    <img class="w-100 blueish-image" src="/public/img_kvartira-1.svg" alt="">
-                    <div style="color: white!important;" class="image-text my-3">
-                        <span class="house-number">10</span> объектов<br>
-                        <h1 class="house-type mx-4 my-2">Офисы</h1>
-                        <div class="d-flex  my-5 py-5 justify-content-end">
-                            <div class="d-flex  my-5 py-5  justify-content-end">
-                                <span style="color: white!important;" class="d-flex px-3  py-4 my-5 read-more">Подробнее
-                                    ></span>
-                            </div>
+                <div class="card card-category">
+                    <div class="d-flex category-buttons justify-content-center my-4 position-relative">
+                        <button class="category-button px-5 mx-5" onclick="filterCategory('all')">Все</button>
+                        <button class="category-button" onclick="filterCategory('аренда')">Аренда</button>
+                        <button class="category-button px-5 mx-5" onclick="filterCategory('покупка')">Покупка</button>
+                    </div>
+                    <div class="container">
+                        <hr style="background-color: white; height: 2px;" class="devider">
+                    </div>
+
+                    <div class="filter-options">
+                        <div class="label-container">
+                            <div class="filter-label">Серия</div>
+                            <input class="filter-input" type="text" id="area" min="0" placeholder="">
+                        </div>
+
+                        <div class="label-container mb-4">
+                            <div class="filter-label">Район</div>
+                            <select style="border-radius: 40px;" class="filter-select" id="district">
+                                <option value="">Выберите Район</option>
+                                <option value="Ленинский">Ленинский</option>
+                                <option value="Свердловский">Свердловский</option>
+                            </select>
+                        </div>
+                        
+                        <div class="label-container">
+                            <div class="filter-label">Площадь</div>
+                            <input class="filter-input" type="number" id="area" min="0" placeholder="">
+                        </div>
+                        
+                        <div class="label-container">
+                            <div class="filter-label">Цена от</div>
+                            <input class="filter-input" type="number" id="priceFrom" min="0" placeholder="От">
+                        </div>
+                        
+                        <div class="label-container ">
+                            <div class="filter-label">Цена до</div>
+                            <input class="filter-input" type="number" id="priceTo" min="0" placeholder="До">
                         </div>
                     </div>
                 </div>
@@ -152,6 +137,21 @@
         </div>
     </div>
 
+    <script>
+        // JavaScript for filtering by category...
+        function filterCategory(category) {
+            const propertyCards = document.querySelectorAll('.col');
+
+            propertyCards.forEach(card => {
+                const cardCategory = card.querySelector('h1').textContent.toLowerCase();
+                if (category === 'all' || cardCategory.includes(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 
     <img class=" container d-flex justify-content-center w-100" src="/public/line_breaker.svg" alt="">
 
@@ -164,11 +164,11 @@
     <div class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 ">
-                    <div class="card custom-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card zoom-card">
                         <div class="d-flex justify-content-center my-3">
                             <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
-                            <div class="recommended-text">Рекомендуемые</div>
+                            <div class="recommended-text">Продажа</div>
                         </div>
                         <div class="card-block mx-3">
                             <div class="d-flex">
@@ -190,11 +190,11 @@
                 </div>
 
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-4">
-                    <div class="card custom-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card zoom-card">
                         <div class="d-flex justify-content-center my-3">
                             <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
-                            <div class="recommended-text">Рекомендуемые</div>
+                            <div class="recommended-text">Продажа</div>
                         </div>
                         <div class="card-block mx-3">
                             <div class="d-flex">
@@ -215,11 +215,11 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-4">
-                    <div class="card custom-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card zoom-card">
                         <div class="d-flex justify-content-center my-3">
                             <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
-                            <div class="recommended-text">Рекомендуемые</div>
+                            <div class="recommended-text">Продажа</div>
                         </div>
                         <div class="card-block mx-3">
                             <div class="d-flex">
@@ -240,11 +240,11 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-4">
-                    <div class="card custom-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card zoom-card">
                         <div class="d-flex justify-content-center my-3">
                             <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
-                            <div class="recommended-text">Рекомендуемые</div>
+                            <div class="recommended-text">Продажа</div>
                         </div>
                         <div class="card-block mx-3">
                             <div class="d-flex">
@@ -264,11 +264,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-4">
-                    <div class="card custom-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card zoom-card">
                         <div class="d-flex justify-content-center my-3">
                             <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
-                            <div class="recommended-text">Рекомендуемые</div>
+                            <div class="recommended-text">Продажа</div>
                         </div>
                         <div class="card-block mx-3">
                             <div class="d-flex">
@@ -288,11 +288,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-4">
-                    <div class="card custom-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card zoom-card">
                         <div class="d-flex justify-content-center my-3">
                             <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
-                            <div class="recommended-text">Рекомендуемые</div>
+                            <div class="recommended-text">Продажа</div>
                         </div>
                         <div class="card-block mx-3">
                             <div class="d-flex">
@@ -312,11 +312,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-4">
-                    <div class="card custom-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card zoom-card">
                         <div class="d-flex justify-content-center my-3">
                             <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
-                            <div class="recommended-text">Рекомендуемые</div>
+                            <div class="recommended-text">Продажа</div>
                         </div>
                         <div class="card-block mx-3">
                             <div class="d-flex">
@@ -336,11 +336,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-4">
-                    <div class="card custom-card">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card custom-card zoom-card">
                         <div class="d-flex justify-content-center my-3">
                             <img class="card-img-top" src="/public/Rectangle 15.svg" alt="">
-                            <div class="recommended-text">Рекомендуемые</div>
+                            <div class="recommended-text">Продажа</div>
                         </div>
                         <div class="card-block mx-3">
                             <div class="d-flex">
@@ -368,7 +368,6 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
-</body>
 
 
 <footer>

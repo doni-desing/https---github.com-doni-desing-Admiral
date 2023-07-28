@@ -2,6 +2,23 @@
 .nav-item.dropdown .dropdown-toggle::before {
     display: none;
 }
+/* Define the slide-up and fade-in animation */
+@keyframes slideUpFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the animation to the elements you want to animate */
+  .animate-slide-up-fade-in {
+    animation: slideUpFadeIn 1s ease-in-out;
+  }
+      
 
 * {
     color: #00408E !important;
