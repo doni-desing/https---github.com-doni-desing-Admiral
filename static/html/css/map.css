@@ -1,0 +1,98 @@
+::placeholder {
+    color: #00408E !important;
+}
+
+/* Дополнительные стили для центрирования текстовых элементов */
+.navbar {
+    justify-content: space-between;
+}
+
+/* Дополнительные стили для выравнивания языкового блока справа */
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.a_language {
+    border-radius: 30%;
+    color: white !important;
+    background-color: #00408E;
+
+}
+
+.nav-item.dropdown .dropdown-toggle::after,
+.nav-item.dropdown .dropdown-toggle::before {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item .a_language {
+        border-radius: 0;
+    }
+}
+
+iframe {
+    border: 4px solid #00408E;
+    /* Blue border with 40px width */
+    border-radius: 40px;
+    /* Make the iframe round */
+}
+
+/* Переопределение дефолтного цвета текста */
+.navbar-light .navbar-nav .nav-link {
+    color: #00408E;
+    /* Замените на нужный вам цвет */
+    font-size: 24px;
+    /* Увеличение размера текста */
+
+}
+
+/* Переопределение цвета текста в выпадающем меню */
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item {
+    color: #00408E;
+    /* Замените на нужный вам цвет */
+}
+
+
+* {
+    color: #00408E !important;
+
+}
+
+/* Дополнительные стили для центрирования текстовых элементов */
+.navbar {
+    justify-content: space-between;
+}
+
+
+
+#map {
+    width: 100%!important;
+
+    height: 600px;
+}
+.card-container {
+    overflow-y: auto;
+    max-height: 200px; /* Adjust the max-height to set the desired height of the card container */
+}
+
+ /* Стили для карточки недвижимости */
+ .property-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.property-card h4 {
+    margin-bottom: 10px;
+    border-radius: 70px;
+}
+.form-select{
+    width: 60%;
+}
+.devide{
+    width: 100%;
+    height: 1px;
+    background-color: #00408E;
+}

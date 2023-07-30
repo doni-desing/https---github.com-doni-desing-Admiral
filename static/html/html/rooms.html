@@ -172,9 +172,9 @@
                     </div>
                 </div>
 
-                <div class="btn-commit  my-5 mx-2">
+                <div class="btn-commit  my-5 mx-2 ">
                     <div class="d-flex col  justify-content-between">
-                        <div class="text-center my-md-2 btn-str">
+                        <div class="text-center my-md-2 my-sm-2 btn-str">
                             <div class="text-btn">Этап строительства</div>
                             <div style="font-size: 22px;" class="text-btn"><b
                                     style="color: #90C83F!important;">Заселен</b></div>
@@ -197,8 +197,8 @@
         }
     </script>
 
-    <div class="container d-flex my-md-5">
-        <ul class="m-d expand-list ">
+    <div class="container d-flex my-md-5 pt-5">
+        <ul class="m-d expand-list  ">
             <li data-md-content="300">
                 <label name="tab" for="tab2" tabindex="-1" class="tab_lab" role="tab">Дополнительная информация
                     v</label>
@@ -400,13 +400,56 @@
                         </div>
                         <div class="blue-divider my-4"></div>
                         <div class="d-flex justify-content-center">
-                            <button style="color: #fff!important; background-color: #00408E; border-radius: 30px; width: 200px; border: none; height: 40px;" class="result">Рассчитать</button>
+                            <button style="color: #fff!important; background-color: #00408E; border-radius: 30px; width: 200px; border: none; height: 40px;" class="btn-calculate">Рассчитать</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal to show calculation result -->
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resultModalLabel">Результат расчета</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="calculationResult">
+                    <!-- Calculation result will be displayed here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Calculate function
+        function calculate() {
+            // Fetch input values
+            const loanAmount = parseFloat(document.getElementById("loan-amount").value);
+            const downPayment = parseFloat(document.getElementById("down-payment").value);
+            const interestRate = parseFloat(document.getElementById("interest-rate").value);
+            const loanTerm = parseInt(document.getElementById("loan-term").value);
+
+            // Your calculation logic here...
+            // For example, calculate monthly payment
+            const monthlyPayment = (loanAmount - downPayment) * (interestRate / 100 / 12) / (1 - Math.pow(1 + (interestRate / 100 / 12), -loanTerm * 12));
+
+            // Display result in the modal
+            document.getElementById("calculationResult").innerHTML = "Ежемесячный платеж: $" + monthlyPayment.toFixed(2);
+
+            // Show the modal
+            $("#resultModal").modal("show");
+        }
+
+        // Event listener for the calculate button
+        document.querySelector(".btn-calculate").addEventListener("click", calculate);
+    </script>
 
     <script>
         // Код для расчета ежемесячного платежа и его вывода
